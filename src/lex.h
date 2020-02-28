@@ -80,14 +80,3 @@ class TokensValidator {
 	}
 
 };
-
-int main() {
-
-	TokensTable table;
-	vector<string> tokens = TokensParser::extractTokensFromFile("hello.txt");
-
-	if(TokensValidator::allTokensAreValid(&tokens,&table)) cout<<"Yes, all tokens are valid!"<<endl;
-	else cout<<"No, all tokens are not valid!"<<endl;
-
-	return 0;
-}
